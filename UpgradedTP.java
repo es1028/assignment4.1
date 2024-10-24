@@ -23,7 +23,7 @@ public class upgradedTP {
         
         reader.close();
         reader = new Scanner(roster);
-        reader.nextLine();  // Skip header again
+        reader.nextLine(); 
 
         for (int i = 0; i < studentCount; i++) {
             String student = reader.nextLine();
@@ -126,7 +126,7 @@ public class upgradedTP {
     // Method to record attendance
     private static void attendance(File roster, Scanner in) throws IOException {
         Scanner reader = new Scanner(roster);
-        reader.nextLine();  // Skip header
+        reader.nextLine();  
 
         ArrayList<String> attended = new ArrayList<>();
         ArrayList<String> absent = new ArrayList<>();
